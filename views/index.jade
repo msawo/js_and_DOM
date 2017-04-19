@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  section.hero
+    .content.medium-padding
+      .content-md-width
+        .bottom-border.gap-bottom-small 
+          h1#myHeading JavaScript and the DOM
+          p.gap-bottom-small
+            | Making a web page interactive
+        button.toggle_list 
+          |  Hide list
+        .listDiv
+          p.description.gap-top-small
+            |  Cars in my garrage:
+          .grid-2-at-small
+            .column
+              input.description(type='text' placeholder='Say something cool')
+            .column
+              button.description.gap-bottom-small 
+                |  Change list description
+          ul.shaded-border
+            li Porsche Macan
+            li BMW M3
+            li C400
+            li Tesla Model 3
+          input.addNewInput(type='text' placeholder='Start typing items')
+          button.addNewButton
+            |  Add item
